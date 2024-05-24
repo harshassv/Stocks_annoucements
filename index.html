@@ -1,8 +1,8 @@
 
-
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,6 +51,9 @@
 
         /* Media Query for Responsive Layout */
         @media (max-width: 767px) {
+            .container {
+                display: block;
+            }
             .column {
                 flex: 1 1 100%; /* Show one column on smaller screens */
             }
@@ -2469,7 +2472,7 @@
 
     </div>
 
-        <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Handle category clicks
             var categoryHeadings = document.querySelectorAll(".column h2");
@@ -2498,9 +2501,6 @@
             });
         });
     </script>
-    
 </body>
 </html>
-
-
 
